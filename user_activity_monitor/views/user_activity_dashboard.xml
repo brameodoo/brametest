@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="user_activity_graph_by_user" model="ir.ui.view">
+        <field name="name">user.activity.graph.by.user</field>
+        <field name="model">user.activity</field>
+        <field name="arch" type="xml">
+            <graph string="Actividad por Usuario" type="bar">
+                <field name="user_id"/>
+                <field name="timestamp" interval="day" type="measure"/>
+                </graph>
+        </field>
+    </record>
+
+    <record id="user_activity_graph_by_module" model="ir.ui.view">
+        <field name="name">user.activity.graph.by.module</field>
+        <field name="model">user.activity</field>
+        <field name="arch" type="xml">
+            <graph string="Actividad por Módulo" type="pie">
+                <field name="module_name"/>
+                <field name="timestamp" interval="day" type="measure"/>
+                </graph>
+        </field>
+    </record>
+
+    <record id="user_activity_pivot_by_department" model="ir.ui.view">
+        <field name="name">user.activity.pivot.by.department</field>
+        <field name="model">user.activity</field>
+        <field name="arch" type="xml">
+            <pivot string="Actividad Detallada por Departamento">
+                <field name="department_id" type="row"/>
+                <field name="user_id" type="row"/>
+                <field name="action_type" type="col"/>
+                <field name="id" type="measure"/> </pivot>
+        </field>
+    </record>
+
+    <record id="action_user_activity_dashboard" model="ir.actions.act_window">
+        <field name="name">Dashboard de Actividad</field>
+        <field name="res_model">user.activity</field>
+        <field name="view_mode">graph,pivot,tree</field> <field name="view_ids" eval="[(5, 0, 0),
+            (0, 0, {'view_mode': 'graph', 'view_id': ref('user_activity_graph_by_user')}),
+            (0, 0, {'view_mode': 'graph', 'view_id': ref('user_activity_graph_by_module')}),
+            (0, 0, {'view_mode': 'pivot', 'view_id': ref('user_activity_pivot_by_department')}),
+            (0, 0, {'view_mode': 'tree', 'view_id': ref('user_activity_tree_view')})]"/>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Analice la actividad de sus usuarios para optimizar la usabilidad de Odoo.
+            </p>
+        </field>
+    </record>
+
+    <menuitem id="menu_user_activity_dashboard" name="Dashboard" parent="menu_user_activity_root" action="action_user_activity_dashboard" sequence="5"/>
+
+</odoo>

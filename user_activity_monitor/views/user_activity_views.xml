@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="user_activity_tree_view" model="ir.ui.view">
+        <field name="name">user.activity.tree</field>
+        <field name="model">user.activity</field>
+        <field name="arch" type="xml">
+            <tree string="Actividad de Usuario" decoration-info="action_type in ('create', 'write')" decoration-success="action_type == 'login'" decoration-danger="action_type == 'unlink'">
+                <field name="timestamp" widget="relative_time"/>
+                <field name="user_id"/>
+                <field name="department_id"/>
+                <field name="action_type"/>
+                <field name="module_name"/>
+                <field name="model_name"/>
+                <field name="record_id"/>
+                <field name="record_name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="user_activity_form_view" model="ir.ui.view">
+        <field name="name">user.activity.form</field>
+        <field name="model">user.activity</field>
+        <field name="arch" type="xml">
+            <form string="Actividad de Usuario">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="user_id"/>
+                            <field name="department_id"/>
+                            <field name="timestamp"/>
+                        </group>
+                        <group>
+                            <field name="action_type"/>
+                            <field name="module_name"/>
+                            <field name="model_name"/>
+                            <field name="record_id"/>
+                            <field name="record_name"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_user_activity" model="ir.actions.act_window">
+        <field name="name">Actividad de Usuarios</field>
+        <field name="res_model">user.activity</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                No hay actividad registrada aún.
+            </p>
+        </field>
+    </record>
+
+    <menuitem id="menu_user_activity_root" name="Monitor de Actividad" sequence="100" web_icon="user_activity_monitor,static/description/icon.png"/>
+    <menuitem id="menu_user_activity_logs" name="Registros de Actividad" parent="menu_user_activity_root" action="action_user_activity" sequence="10"/>
+
+</odoo>
