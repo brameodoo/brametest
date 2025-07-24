@@ -17,7 +17,7 @@
         'base',  # Módulo base de Odoo
     ],
     'data': [
-        'security/ir.model.access.csv',
+        #'security/ir.model.access.csv',
         'views/fleet_vehicle_views.xml',
     ],
     'installable': True,
