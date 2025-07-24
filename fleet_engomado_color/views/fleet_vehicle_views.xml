@@ -6,7 +6,7 @@
         <field name="inherit_id" ref="fleet.fleet_vehicle_view_form"/> 
         <field name="arch" type="xml">
             <xpath expr="//field[@name='license_plate']" position="after">
-                <field name="engomado_color"/>
+                <field name="engomado_color" groups="fleet.fleet_group_manager"/>
             </xpath>
         </field>
     </record>
