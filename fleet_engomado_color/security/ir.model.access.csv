@@ -1,2 +1,4 @@
-id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_fleet_vehicle_engomado_color,fleet.vehicle.engomado.color,fleet.model_fleet_vehicle,fleet.group_fleet_manager,1,1,1,1
+# fleet_engomado_color/security/ir.model.access.csv
+# Si este archivo solo contenía la línea para 'access_fleet_vehicle_engomado_color',
+# entonces puedes dejarlo vacío o incluso eliminar el archivo y su referencia en __manifest__.py
+# Si contiene otras ACLs, asegúrate de que sean correctas.
