@@ -5,9 +5,10 @@
         <field name="model">fleet.vehicle</field>
         <field name="inherit_id" ref="fleet.fleet_vehicle_view_form"/> 
         <field name="arch" type="xml">
-            <xpath expr="//field[@name='license_plate']" position="after">
+            <xpath expr="//group[@string='Vehicle']" position="inside">
                 <field name="engomado_color" groups="fleet.fleet_group_manager"/>
             </xpath>
-        </field>
+            
+            </field>
     </record>
 </odoo>
