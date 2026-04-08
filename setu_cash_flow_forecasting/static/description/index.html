@@ -1,0 +1,1570 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Cash & Budget Forecasting | Setu Consulting Services Pvt. Ltd. | Odoo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://www.setuconsulting.com/css/fonts.css" rel="stylesheet">
+    <link href="https://www.setuconsulting.com/css/plugins.css" rel="stylesheet">
+    <!-- <link href="https://www.setuconsulting.com/css/style.css" rel="stylesheet"> -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<!-- odoo description page css -->
+<style>
+    h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5,
+    .h6 {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        line-height: 1.1;
+        color: #21272b;
+    }
+
+    ul {
+        color: #222020;
+    }
+
+    * {
+        font-family: "Montserrat", sans-serif;
+    }
+</style>
+<body>
+<div class="container">
+    <!-- Header -->
+    <div class="text-right">
+        <div class="col-md-12 " style="margin-left: 0px; margin: 0px 0px;" >
+            <b>User Guide:</b>
+            <span class="alert alert-primary" style="padding: 7px 7px 7px 7px; font-size: 14px; border-radius: 5px;" title="Copy this link and paste it to new tab or window">
+                <strong>https://www.setuconsulting.com/slides/cash-forecast-user-guide-23</strong></span></strong>
+            </span>
+        </div>  
+    </div>
+    <section class="index-banner shadow-sm position-relative mt40" style="border-top:4px solid #37bbf9; border-radius: 10px;">
+        <img class="w-100 h-100 position-absolute img-fluid mb16" src="images/etc/1-background.jpg" style="border-radius: 10px;" />
+        <div class="container p-md-4 p-4 position-relative">
+            <div class="row align-items-center">
+                <div class="col-md-2 text-center text-md-left">
+                    <img src="images/odoo_images/setu.png" alt="Setu Consulting Services Pvt. Ltd." title="Setu Consulting Services Pvt. Ltd." class="img img-fluid" >
+                </div>
+                <div class="col-md-4 text-center" style="margin-left: auto; padding-right: 10px; padding-left: 10px;">
+                    <img src="images/odoo15.png" width="80px" alt="Odoo 15 Certified" title="Odoo 15 Certified"> 
+                    <img src="images/odoo16.png" width="80px" alt="Odoo 16 Certified" title="Odoo 16 Certified"> 
+                    <img src="images/odoo17.png" width="80px" alt="Odoo 16 Certified" title="Odoo 17 Certified"> 
+                </div>
+                <div class="col-md-2 text-center text-md-left" style="margin-left: auto;padding-right: 10px; padding-left: 10px;">
+                    <h6 style="font-size:18px;margin:10px 0">
+                        <span class="btn btn-danger w-md-100 w-auto" style="color:#ffffff; background-color:#f62943; border-radius:0.5rem;"><i class="fa fa-check"></i> Community </span>
+                    </h6>
+                </div>
+                <div class="col-md-2 text-center text-md-left" style="padding-right: 10px; padding-left: 10px;">
+                    <h6 style="font-size:18px;margin:10px 0">
+                        <span class="btn btn-warning w-md-100 w-auto" style="color:#ffffff; background-color:#dab000; border-radius:0.5rem;"><i class="fa fa-check"></i> Enterprise </span>
+                    </h6>
+                </div>
+                <div class="col-md-2 text-center text-md-left" style="padding-right: 10px; padding-left: 10px;">
+                    <h6 style="font-size:18px;margin:10px 0">
+                        <span class="btn btn-success w-md-100 w-auto" style="color:#ffffff; background-color:#00c157; border-radius:0.5rem;"><i class="fa fa-check"></i> Odoo.sh</span>
+                    </h6>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div class="col-lg-12 col-md-12">
+        <!-- Title START -->
+        <div class="container p-md-4 p-4 position-relative">
+            <div class="row align-items-center">
+                <div class="col-md-8 text-center text-md-left" style="margin-left: auto;padding-right: 10px; padding-left: 10px;">
+                    <h6 style="font-size:18px;">
+                        <span class="btn btn-primary" style="color:#ffffff; font-size: 38px; font-weight: bold; background-color:#0298FF; border-radius:0.5rem;">
+                            CASH & BUDGET FORECASTING 
+                        </span>
+                    </h6>
+                </div>
+                <div class="col-md-2 text-center text-md-left" style="margin-left: auto;padding-right: 140px; padding-left: 10px;">
+                    <a href="mailto:apps@setuconsulting.com?subject=Cash & Budget Forecasting Version 19.0 - Demo Request" target="_blank">
+                        <img src="images/requestdemo1.png" title="Request a Demo" alt="Request a Demo" width="200px" class="ml-4" >
+                    </a>
+                </div>
+                <div class="col-md-2 text-center text-md-left" style="margin-left: auto; padding-left: 70px;">
+                    <a href="https://www.youtube.com/playlist?list=PLH6xCEY0yCICqQFq_m64Boo-11RkLVIfM" target="_blank">
+                        <img src="images/video_userguide1.png" title="Video user guide" alt="Video user guide" width="110px" class="ml-4" >
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Title END -->
+        <section class="index-banner shadow-sm position-relative mt40" style="border-top:4px solid #37bbf9; border-radius: 10px; margin-top: 15px;">
+            <img class="w-100 h-100 position-absolute img-fluid mb16" src="images/etc/1-background.jpg" style="border-radius: 10px;" />
+            <div class="container p-md-3 p-4 position-relative">
+                <p class="text-justify " data-animate="fadeIn" data-animate-delay="400">
+                    <font size="4" style="font-family: Roboto;font-weight: 500;">
+                        <span class="btn-warning" style="padding: 7px 7px 7px 7px; font-size: 14px; border-radius: 5px;"><strong>The Cash & Budget Forecast</strong></span> solution calculates and allows end users to know the available cash in the upcoming future considering the Opening balance, all cash receipts, and all cash expenditures. Moreover, you can also create Budget Positions directly from the Cash Forecast type for each income and expenditure. Integrating the Budget module with Cash Forecast also enables users to avoid manual entries in Budget Forecast as the data is seamlessly imported from Cash Forecast calculated for all Income and Expenditure.  Also, various statistical and analytical reports allow users to have a complete insight not only into all income and expenditures, but also enables you to compare and analyze  you for each period.
+                    </font>
+                </p>
+            </div>
+            <div class="container position-relative p-4">
+                <section id="sh_hot_feature" style="background-color: transparent;">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 mb-2">
+                                <div class="sh_icon d-flex justify-content-center align-items-center rounded shadow" style="padding: 15px;border: 1px solid #9ebdfb;border-bottom: 4px solid #9ebdfb;background-color: #ebf0fb;border-radius: 0.25rem !important;">
+                                    <span style="color: #212121;font-weight: 600;vertical-align: middle;padding-left: 10px;text-align: left;">
+                                        Anticipate the cash available in future.
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-2">
+                                <div class="sh_icon d-flex justify-content-center align-items-center rounded shadow" style="padding: 15px;border: 1px solid #9ebdfb;border-bottom: 4px solid #9ebdfb;background-color: #ebf0fb;border-radius: 0.25rem !important;">
+                                    <span style="color: #212121;font-weight: 600;vertical-align: middle;padding-left: 10px;text-align: left;">
+                                        Stay informed to plan the next strategy.
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-2">
+                                <div class="sh_icon d-flex justify-content-center align-items-center rounded shadow" style="padding: 15px;border: 1px solid #9ebdfb;border-bottom: 4px solid #9ebdfb;background-color: #ebf0fb;border-radius: 0.25rem !important;">
+                                    <span style="color: #212121;font-weight: 600;vertical-align: middle;padding-left: 10px;text-align: left;">
+                                        Project your cash needs in advance.
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-2">
+                                <div class="sh_icon d-flex justify-content-center align-items-center rounded shadow" style="padding: 15px;border: 1px solid #9ebdfb;border-bottom: 4px solid #9ebdfb;background-color: #ebf0fb;border-radius: 0.25rem !important;">
+                                    <span style="color: #212121;font-weight: 600;vertical-align: middle;padding-left: 10px;text-align: left;"> 
+                                        Evaluate your business’ liquidity position.
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-2">
+                                <div class="sh_icon d-flex justify-content-center align-items-center rounded shadow" style="padding: 15px;border: 1px solid #9ebdfb;border-bottom: 4px solid #9ebdfb;background-color: #ebf0fb;border-radius: 0.25rem !important;">
+                                    <span style="color: #212121;font-weight: 600;vertical-align: middle;padding-left: 10px;text-align: left;">
+                                        Liquidity risk management.
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-2">
+                                <div class="sh_icon d-flex justify-content-center align-items-center rounded shadow" style="padding: 15px;border: 1px solid #9ebdfb;border-bottom: 4px solid #9ebdfb;background-color: #ebf0fb;border-radius: 0.25rem !important;">
+                                    <span style="color: #212121;font-weight: 600;vertical-align: middle;padding-left: 10px;text-align: left;">
+                                        Interest and debt reduction.
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-2">
+                                <div class="sh_icon d-flex justify-content-center align-items-center rounded shadow" style="padding: 15px;border: 1px solid #9ebdfb;border-bottom: 4px solid #9ebdfb;background-color: #ebf0fb;border-radius: 0.25rem !important;">
+                                    <span style="color: #212121;font-weight: 600;vertical-align: middle;padding-left: 10px;text-align: left;">
+                                        Strategic planning for growth.
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-2">
+                                <div class="sh_icon d-flex justify-content-center align-items-center rounded shadow" style="padding: 15px;border: 1px solid #9ebdfb;border-bottom: 4px solid #9ebdfb;background-color: #ebf0fb;border-radius: 0.25rem !important;">
+                                    <span style="color: #212121;font-weight: 600;vertical-align: middle;padding-left: 10px;text-align: left;">
+                                        A Single View of ‘IN Flow’ over ‘OUT Flow’.
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-2">
+                                <div class="sh_icon d-flex justify-content-center align-items-center rounded shadow" style="padding: 15px;border: 1px solid #9ebdfb;border-bottom: 4px solid #9ebdfb;background-color: #ebf0fb;border-radius: 0.25rem !important;">
+                                    <span style="color: #212121;font-weight: 600;vertical-align: middle;padding-left: 10px;text-align: left;">
+                                        Be prepared in advance to get out of debt.
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-2">
+                                <div class="sh_icon d-flex justify-content-center align-items-center rounded shadow" style="padding: 15px;border: 1px solid #9ebdfb;border-bottom: 4px solid #9ebdfb;background-color: #ebf0fb;border-radius: 0.25rem !important;">
+                                    <span style="color: #212121;font-weight: 600;vertical-align: middle;padding-left: 10px;text-align: left;">
+                                        Avoid manual entries in creating Budget Forecast.
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12 text-muted mt32" style="height: 180px">
+            <div class="icon-class m-l-10 alert alert-danger">
+                <h3>NOTE</h3>
+                <b>Cash Forecasting</b> is functional in both the Odoo Enterprise and Community editions, <br>
+                While <b>Budget Forecasting</b> is functional in the Odoo Enterprise edition only.
+            </div>
+        </div>
+    </div>
+    
+    <div class="container mt-4">
+        <span class="badge badge-pill badge-light" style="color:#000000; font-size: 32px; font-weight: bold; background-color:#ffffff; border-radius:0.5rem; padding:1rem;">KEY FEATURES
+        </span>
+    </div>
+
+    <!-- Features - START -->
+    <section class="index-banner shadow-sm position-relative mt40" style="border-top:4px solid #37bbf9; border-radius: 10px;">
+        <img class="w-100 h-100 position-absolute img-fluid mb16" src="images/etc/5-background.jpg" style="border-radius: 10px; opacity:0.1" />
+        <div class="container p-md-3 p-4 position-relative">
+            <!-- KEY FEATURES START -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="row text-left">
+                        <div class="col-lg-12">
+                            <div class="img_dec shadow mt-4" style="padding: 20px;align-items: center;display: inline-flex; border-radius: 10px; width: 100%">
+                                <div class="sh_inner_box d-flex align-items-baseline">
+                                    <div class="sh_icon">
+                                        <span class="fa fa-hand-o-right" style="color:#1e266d; font-weight:600; font-size:18px; padding-right:10px"></span>
+                                    </div>
+                                    <div class="sh_dec">
+                                        <h5 style="font-size: 22px;line-height: 1.455;font-weight: 600;color: #1e266d;">Smart Dashboard analysis</h5>
+                                        <ul class="list-unstyled pl-0" style="font-size:15px;">
+                                        <font size="4">
+                                            <li class="mb-4" style="list-style: none"><img src="images/forward-arrow.svg" alt="arrow" style="width:15px;margin-right:10px" class="ml-4">Anticipate future cash expenses, and cash income.</li>
+                                        </font>
+                                        <font size="4">
+                                            <li class="mb-4" style="list-style: none"><img src="images/forward-arrow.svg" alt="arrow" style="width:15px;margin-right:10px" class="ml-4">
+                                                Compare and analyze
+                                            </li>
+                                            <ul class="list-unstyled pl-0" style="font-size:18px; margin-left:50px">
+                                                <li class="mb-4" style="list-style: none"><img src="images/correct.svg" alt="arrow" style="width:15px;margin-right:10px" class="ml-4">Forecasted Cash-Out of all months</li>
+                                                <li class="mb-4" style="list-style: none"><img src="images/correct.svg" alt="arrow" style="width:15px;margin-right:10px" class="ml-4">Forecasted Cash-In of all months</li>
+                                                <li class="mb-4" style="list-style: none"><img src="images/correct.svg" alt="arrow" style="width:15px;margin-right:10px" class="ml-4">The forecasted value with the actual value for each forecast type of</li>
+                                            </ul>
+                                            <ul class="list-unstyled pl-0" style="font-size:18px; margin-left:100px">
+                                                <li class="mb-4" style="list-style: none"><img src="images/correct.svg" alt="arrow" style="width:15px;margin-right:10px" class="ml-4">Cash-Out</li>
+                                                <li class="mb-4" style="list-style: none"><img src="images/correct.svg" alt="arrow" style="width:15px;margin-right:10px" class="ml-4">Cash-In</li>
+                                            </ul>
+                                        </font>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row text-left">
+                                <div class="col-lg-6">
+                                    <div class="img_dec shadow mt-4" style="padding: 20px;align-items: center;display: inline-flex; border-left: 4px solid #37bbf9; border-radius: 10px; width: 100%;">
+                                        <div class="sh_inner_box d-flex align-items-baseline">
+                                            <div class="sh_icon">
+                                                <span class="fa fa-hand-o-right"
+                                                style="color:#1e266d; font-weight:600; font-size:22px; padding-right:10px"></span>
+                                            </div>
+                                            <div class="sh_dec">
+                                                <p style="color:#616060; text-align:justify; font-family: Roboto;font-weight: 500;">
+                                                    Efficiently manage your financial planning by defining separate categories for both - income and expenditures in your cash forecasts.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="img_dec shadow mt-4" style="padding: 20px;align-items: center;display: inline-flex; border-left: 4px solid #37bbf9; border-radius: 10px;">
+                                        <div class="sh_inner_box d-flex align-items-baseline">
+                                            <div class="sh_icon">
+                                                <span class="fa fa-hand-o-right"
+                                                style="color:#1e266d; font-weight:600; font-size:22px; padding-right:10px"></span>
+                                            </div>
+                                            <div class="sh_dec">
+                                                <p style="color:#616060; text-align:justify; font-family: Roboto;font-weight: 500;">
+                                                    Get the real value for each cash forecast type and compare it with forecasted value.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="img_dec shadow mt-4" style="padding: 20px;align-items: center; border-left: 4px solid #37bbf9; border-radius: 10px;">
+                                        <div class="sh_inner_box d-flex align-items-baseline">
+                                            <div class="sh_icon">
+                                                <span class="fa fa-hand-o-right"
+                                                style="color:#1e266d; font-weight:600; font-size:18px; padding-right:10px"></span>
+                                            </div>
+                                            <div class="sh_dec">
+                                                <p style="color:#616060; text-align:justify; font-family: Roboto;font-weight: 500;">
+                                                    Calculate Cash Forecast based on Analytical Accounts.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="img_dec shadow mt-4" style="padding: 20px;align-items: center; border-left: 4px solid #37bbf9; border-radius: 10px;">
+                                        <div class="sh_inner_box d-flex align-items-baseline">
+                                            <div class="sh_icon">
+                                                <span class="fa fa-hand-o-right"
+                                                style="color:#1e266d; font-weight:600; font-size:18px; padding-right:10px"></span>
+                                            </div>
+                                            <div class="sh_dec">
+                                                <p style="color:#616060; text-align:justify; font-family: Roboto;font-weight: 500;">
+                                                    Link your existing chart of accounts with the Cash Forecast type.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="img_dec shadow mt-4" style="padding: 20px;align-items: center; border-left: 4px solid #37bbf9; border-radius: 10px;">
+                                       <div class="sh_inner_box d-flex align-items-baseline">
+                                           <div class="sh_icon">
+                                               <span class="fa fa-hand-o-right"
+                                               style="color:#1e266d; font-weight:600; font-size:18px; padding-right:10px"></span>
+                                           </div>
+                                           <div class="sh_dec">
+                                               <p style="color:#616060; text-align:justify; font-family: Roboto;font-weight: 500;">
+                                                   Automated / Manual Cash Forecast Calculation for Income and Expenditures.
+                                               </p>
+                                           </div>
+                                       </div>
+                                    </div>
+                                    <div class="img_dec shadow mt-4" style="padding: 20px;align-items: center;display: inline-flex; border-left: 4px solid #37bbf9; border-radius: 10px;">
+                                       <div class="sh_inner_box d-flex align-items-baseline">
+                                           <div class="sh_icon">
+                                               <span class="fa fa-hand-o-right"
+                                               style="color:#1e266d; font-weight:600; font-size:18px; padding-right:10px"></span>
+                                           </div>
+                                           <div class="sh_dec">
+                                               <p style="color:#616060; text-align:justify; font-family: Roboto;font-weight: 500;">
+                                                   Control Cash Forecast by adding the start date and end date in the forecasting type.
+                                               </p>
+                                           </div>
+                                       </div>
+                                    </div>
+                                    <div class="img_dec shadow mt-4" style="padding: 20px;align-items: center;display: inline-flex; border-left: 4px solid #37bbf9; border-radius: 10px; width: 100%;">
+                                       <div class="sh_inner_box d-flex align-items-baseline">
+                                           <div class="sh_icon">
+                                               <span class="fa fa-hand-o-right"
+                                               style="color:#1e266d; font-weight:600; font-size:18px; padding-right:10px"></span>
+                                           </div>
+                                           <div class="sh_dec">
+                                               <p style="color:#616060; text-align:justify; font-family: Roboto;font-weight: 500;">
+                                                   Derive cash forecasts directly from your accounting data stored in Excel or CSV files, simplifying the forecasting process.
+                                               </p>
+                                           </div>
+                                       </div>
+                                    </div>
+                                    <div class="img_dec shadow mt-4" style="padding: 20px;align-items: center; border-left: 4px solid #37bbf9; border-radius: 10px;">
+                                       <div class="sh_inner_box d-flex align-items-baseline">
+                                           <div class="sh_icon">
+                                               <span class="fa fa-hand-o-right"
+                                               style="color:#1e266d; font-weight:600; font-size:18px; padding-right:10px"></span>
+                                           </div>
+                                           <div class="sh_dec">
+                                               <p style="color:#616060; text-align:justify; font-family: Roboto;font-weight: 500;">
+                                                   Generate Multiple Budget Positions directly from the distinct forecast type of each income and expenditure.
+                                               </p>
+                                           </div>
+                                       </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="img_dec shadow mt-4" style="padding: 20px;align-items: center;display: inline-flex; border-left: 4px solid #37bbf9; border-radius: 10px; width: 100%;">
+                                        <div class="sh_inner_box d-flex align-items-baseline">
+                                            <div class="sh_icon">
+                                                <span class="fa fa-hand-o-right"
+                                                style="color:#1e266d; font-weight:600; font-size:22px; padding-right:10px"></span>
+                                            </div>
+                                            <div class="sh_dec">
+                                                <p style="color:#616060; text-align:justify; font-family: Roboto;font-weight: 500;">
+                                                    Determine your business's liquidity by categorizing distinct cash forecast types for both income and expenses.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="img_dec shadow mt-4" style="padding: 20px;align-items: center;display: inline-flex; border-left: 4px solid #37bbf9; border-radius: 10px;">
+                                       <div class="sh_inner_box d-flex align-items-baseline">
+                                           <div class="sh_icon">
+                                               <span class="fa fa-hand-o-right"
+                                               style="color:#1e266d; font-weight:600; font-size:18px; padding-right:10px"></span>
+                                           </div>
+                                           <div class="sh_dec">
+                                               <p style="color:#616060; text-align:justify; font-family: Roboto;font-weight: 500;">
+                                                   Calculate Cash Forecast on Daily / Weekly / Monthly basis as per your requirement.
+                                               </p>
+                                           </div>
+                                       </div>
+                                    </div>
+                                    <div class="img_dec shadow mt-4" style="padding: 20px;align-items: center;display: inline-flex; border-left: 4px solid #37bbf9; border-radius: 10px;">
+                                       <div class="sh_inner_box d-flex align-items-baseline">
+                                           <div class="sh_icon">
+                                               <span class="fa fa-hand-o-right"
+                                               style="color:#1e266d; font-weight:600; font-size:18px; padding-right:10px"></span>
+                                           </div>
+                                           <div class="sh_dec">
+                                               <p style="color:#616060; text-align:justify; font-family: Roboto;font-weight: 500;">
+                                                   Enhance Cash Forecast Calculation by Incorporating Additional Gains and Losses across Multiple Scenarios.
+                                               </p>
+                                           </div>
+                                       </div>
+                                    </div>
+                                    <div class="img_dec shadow mt-4" style="padding: 20px;align-items: center; border-left: 4px solid #37bbf9; border-radius: 10px;">
+                                       <div class="sh_inner_box d-flex align-items-baseline">
+                                           <div class="sh_icon">
+                                               <span class="fa fa-hand-o-right"
+                                               style="color:#1e266d; font-weight:600; font-size:18px; padding-right:10px"></span>
+                                           </div>
+                                           <div class="sh_dec">
+                                               <p style="color:#616060; text-align:justify; font-family: Roboto;font-weight: 500;">
+                                                   Quickly create Cash Forecast type from Chart of Accounts.
+                                               </p>
+                                           </div>
+                                       </div>
+                                    </div>
+                                    <div class="img_dec shadow mt-4" style="padding: 20px;align-items: center; border-left: 4px solid #37bbf9; border-radius: 10px;">
+                                       <div class="sh_inner_box d-flex align-items-baseline">
+                                           <div class="sh_icon">
+                                               <span class="fa fa-hand-o-right"
+                                               style="color:#1e266d; font-weight:600; font-size:18px; padding-right:10px"></span>
+                                           </div>
+                                           <div class="sh_dec">
+                                               <p style="color:#616060; text-align:justify; font-family: Roboto;font-weight: 500;">
+                                                   Add possible growth in the forecasting and create future forecasting.
+                                               </p>
+                                           </div>
+                                       </div>
+                                    </div>
+                                    <div class="img_dec shadow mt-4" style="padding: 20px;align-items: center; border-left: 4px solid #37bbf9; border-radius: 10px;">
+                                       <div class="sh_inner_box d-flex align-items-baseline">
+                                           <div class="sh_icon">
+                                               <span class="fa fa-hand-o-right"
+                                               style="color:#1e266d; font-weight:600; font-size:18px; padding-right:10px"></span>
+                                           </div>
+                                           <div class="sh_dec">
+                                               <p style="color:#616060; text-align:justify; font-family: Roboto;font-weight: 500;">
+                                                   Control cash forecast by defining the duration of cash forecast creation.
+                                               </p>
+                                           </div>
+                                       </div>
+                                    </div>
+                                    <div class="img_dec shadow mt-4" style="padding: 20px;align-items: center;display: inline-flex; border-left: 4px solid #37bbf9; border-radius: 10px; width: 100%;">
+                                       <div class="sh_inner_box d-flex align-items-baseline">
+                                           <div class="sh_icon">
+                                               <span class="fa fa-hand-o-right"
+                                               style="color:#1e266d; font-weight:600; font-size:18px; padding-right:10px"></span>
+                                           </div>
+                                           <div class="sh_dec">
+                                               <p style="color:#616060; text-align:justify; font-family: Roboto;font-weight: 500;">
+                                                   Forecast your Budget directly because of integrated Budget module.
+                                               </p>
+                                           </div>
+                                       </div>
+                                    </div>
+                                    <div class="img_dec shadow mt-4" style="padding: 20px;align-items: center;display: inline-flex; border-left: 4px solid #37bbf9; border-radius: 10px; width: 100%;">
+                                       <div class="sh_inner_box d-flex align-items-baseline">
+                                           <div class="sh_icon">
+                                               <span class="fa fa-hand-o-right"
+                                               style="color:#1e266d; font-weight:600; font-size:18px; padding-right:10px"></span>
+                                           </div>
+                                           <div class="sh_dec">
+                                               <p style="color:#616060; text-align:justify; font-family: Roboto;font-weight: 500;">
+                                                   Automate the input of planned amounts in your budget by seamlessly importing data from the cash forecast, guaranteeing efficient Budget creation for all Budget Positions.
+                                               </p>
+                                           </div>
+                                       </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="img_dec shadow mt-4" style="padding: 20px;align-items: center; border-radius: 10px; width: 100%">
+                                        <div class="sh_inner_box d-flex align-items-baseline">
+                                            <div class="sh_icon">
+                                                <span class="fa fa-hand-o-right" style="color:#1e266d; font-weight:600; font-size:18px; padding-right:10px"></span>
+                                            </div>
+                                                <div class="sh_dec">
+                                                    <h5 style="font-size: 22px;line-height: 1.455;font-weight: 600;color: #1e266d;">Cash Forecast Analysis Report</h5>
+                                                    <ul class="list-unstyled pl-0" style="font-size:15px;">
+                                                    <font size="4">
+                                                        <li class="mb-4" style="list-style: none"><img src="images/forward-arrow.svg" alt="arrow" style="width:15px;margin-right:10px" class="ml-4">
+                                                            Evaluate your business’ liquidity position  through a single view of IN Flow over OUT Flow.
+                                                        </li>
+                                                        <li class="mb-4" style="list-style: none"><img src="images/forward-arrow.svg" alt="arrow" style="width:15px;margin-right:10px" class="ml-4">
+                                                            Opening Balance at beginning of each month.
+                                                        </li>
+                                                        <li class="mb-4" style="list-style: none"><img src="images/forward-arrow.svg" alt="arrow" style="width:15px;margin-right:10px" class="ml-4">
+                                                            All Cash In and Cash Out category and their Type.
+                                                        </li>
+                                                        <li class="mb-4" style="list-style: none"><img src="images/forward-arrow.svg" alt="arrow" style="width:15px;margin-right:10px" class="ml-4">
+                                                            Closing balance after considering all Cash forecast types of Cash In and Cash Out.
+                                                        </li>
+                                                    </font>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="img_dec shadow mt-4" style="padding: 20px;align-items: center; border-radius: 10px; width: 100%">
+                                        <div class="sh_inner_box d-flex align-items-baseline">
+                                            <div class="sh_icon">
+                                                <span class="fa fa-hand-o-right" style="color:#1e266d; font-weight:600; font-size:18px; padding-right:10px"></span>
+                                            </div>
+                                                <div class="sh_dec">
+                                                    <h5 style="font-size: 22px;line-height: 1.455;font-weight: 600;color: #1e266d;">Cash Out Analysis Report</h5>
+                                                    <ul class="list-unstyled pl-0" style="font-size:15px;">
+                                                    <font size="4">
+                                                        <li class="mb-4" style="list-style: none"><img src="images/forward-arrow.svg" alt="arrow" style="width:15px;margin-right:10px" class="ml-4">
+                                                            Evaluate your business’ cash expenditures.
+                                                        </li>
+                                                        <li class="mb-4" style="list-style: none"><img src="images/forward-arrow.svg" alt="arrow" style="width:15px;margin-right:10px" class="ml-4">
+                                                            Track, compare and analyze the forecasted value of all Cash Out category and their Type.
+                                                        </li>
+                                                    </font>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="img_dec shadow mt-4" style="padding: 20px;align-items: center; border-radius: 10px; width: 100%">
+                                        <div class="sh_inner_box d-flex align-items-baseline">
+                                            <div class="sh_icon">
+                                                <span class="fa fa-hand-o-right" style="color:#1e266d; font-weight:600; font-size:18px; padding-right:10px"></span>
+                                            </div>
+                                                <div class="sh_dec">
+                                                    <h5 style="font-size: 22px;line-height: 1.455;font-weight: 600;color: #1e266d;">Cash In Analysis Report</h5>
+                                                    <ul class="list-unstyled pl-0" style="font-size:15px;">
+                                                    <font size="4">
+                                                        <li class="mb-4" style="list-style: none"><img src="images/forward-arrow.svg" alt="arrow" style="width:15px;margin-right:10px" class="ml-4">
+                                                            Evaluate your business’ cash income.
+                                                        </li>
+                                                        <li class="mb-4" style="list-style: none"><img src="images/forward-arrow.svg" alt="arrow" style="width:15px;margin-right:10px" class="ml-4">
+                                                            Track, compare and analyze the forecasted value of all Cash In category and their Type.
+                                                        </li>
+                                                    </font>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="img_dec shadow mt-4" style="padding: 20px;align-items: center; border-radius: 10px; width: 100%">
+                                        <div class="sh_inner_box d-flex align-items-baseline">
+                                            <div class="sh_icon">
+                                                <span class="fa fa-hand-o-right" style="color:#1e266d; font-weight:600; font-size:18px; padding-right:10px"></span>
+                                            </div>
+                                                <div class="sh_dec">
+                                                    <h5 style="font-size: 22px;line-height: 1.455;font-weight: 600;color: #1e266d;">Budget Analysis Report</h5>
+                                                    <ul class="list-unstyled pl-0" style="font-size:15px;">
+                                                    <font size="4">
+                                                        <li class="mb-4" style="list-style: none"><img src="images/forward-arrow.svg" alt="arrow" style="width:15px;margin-right:10px" class="ml-4">
+                                                            Evaluate your Budget’s  the Planned Amount, Practical Amount and Theoretical amount for each Budget Position.
+                                                        </li>
+                                                        <li class="mb-4" style="list-style: none"><img src="images/forward-arrow.svg" alt="arrow" style="width:15px;margin-right:10px" class="ml-4">
+                                                            Track, compare and analyze the Planned Amount, Practical Amount and Theoretical amount of each Budget Position.
+                                                        </li>
+                                                    </font>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="img_dec shadow mt-4" style="padding: 20px;align-items: center; border-radius: 10px; width: 100%">
+                                        <div class="sh_inner_box d-flex align-items-baseline">
+                                            <div class="sh_icon">
+                                                <span class="fa fa-hand-o-right" style="color:#1e266d; font-weight:600; font-size:18px; padding-right:10px"></span>
+                                            </div>
+                                                <div class="sh_dec">
+                                                    <h5 style="font-size: 22px;line-height: 1.455;font-weight: 600;color: #1e266d;">Budget Analysis Setu Report</h5>
+                                                    <ul class="list-unstyled pl-0" style="font-size:15px;">
+                                                    <font size="4">
+                                                        <li class="mb-4" style="list-style: none"><img src="images/forward-arrow.svg" alt="arrow" style="width:15px;margin-right:10px" class="ml-4">
+                                                            Assess the Planned Amount and % value for each Budget Position.
+                                                        </li>
+                                                        <li class="mb-4" style="list-style: none"><img src="images/forward-arrow.svg" alt="arrow" style="width:15px;margin-right:10px" class="ml-4">
+                                                            Track, compare and analyze the Planned Amount and % Value of each Budget Position.
+                                                        </li>
+                                                    </font>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="img_dec shadow mt-4" style="padding: 20px;align-items: center; border-radius: 10px; width: 100%">
+                                        <div class="sh_inner_box d-flex align-items-baseline">
+                                            <div class="sh_icon">
+                                                <span class="fa fa-hand-o-right" style="color:#1e266d; font-weight:600; font-size:18px; padding-right:10px"></span>
+                                            </div>
+                                                <div class="sh_dec">
+                                                    <h5 style="font-size: 22px;line-height: 1.455;font-weight: 600;color: #1e266d;">Budget Comparison Report</h5>
+                                                    <ul class="list-unstyled pl-0" style="font-size:15px;">
+                                                    <font size="4">
+                                                        <li class="mb-4" style="list-style: none"><img src="images/forward-arrow.svg" alt="arrow" style="width:15px;margin-right:10px" class="ml-4">
+                                                            Conduct comparisons of Planned Amount and % value for each Budget Position across various Fiscal Years/Fiscal Periods.
+                                                        </li>
+                                                        <li class="mb-4" style="list-style: none"><img src="images/forward-arrow.svg" alt="arrow" style="width:15px;margin-right:10px" class="ml-4">
+                                                            Track, Compare and Analyze Planned Amount and % Value of each Budget Position across different Fiscal Years/Fiscal Periods.
+                                                        </li>
+                                                    </font>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Features - END -->
+    
+    <!-- SCREENSHOT - START -->
+    <div class="container mt-4">
+        <span class="badge badge-pill badge-light" style="color:#000000; font-size: 32px; font-weight: bold; background-color:#ffffff; border-radius:0.5rem; padding:1rem;">SCREENSHOTS
+        </span>
+    </div>
+    <section class="index-banner shadow-sm position-relative mt40" style="border-top:4px solid #37bbf9; border-radius: 10px;">
+        <img class="w-100 h-100 position-absolute img-fluid mb16" src="images/etc/2-background.jpg" style="border-radius: 10px;" />
+        <div class="container position-relative">
+        <div class="position-relative mb-5">
+            <div class="row mb-3 deep-2 overflow-hidden" style="margin:0px; ">
+                <div class="col-md-12 p-0 overflow-hidden">
+                    <ul class="nav nav-tabs nav-fill" style="margin-top: 0px !important;text-align: center;margin: auto;justify-content: space-around;background-color: transparent;" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link active" id="dashboard-tab" data-bs-toggle="tab" data-bs-target="#dashboard"
+                                role="tab" aria-controls="dashboard" aria-selected="true" style="color: #0080ff; font-weight: bold;">
+                                Dashboard
+                            </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="configuration-tab" data-bs-toggle="tab" data-bs-target="#configuration"
+                                role="tab" aria-controls="configuration" aria-selected="false" style="color: #0080ff; font-weight: bold;">
+                                Configuration
+                            </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="forecast-categories-tab" data-bs-toggle="tab" data-bs-target="#forecast-categories"
+                                role="tab" aria-controls="forecast-categories" aria-selected="false" style="color: #0080ff; font-weight: bold;">
+                                Forecast <br> Categories
+                            </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="forecast-types-tab" data-bs-toggle="tab" data-bs-target="#forecast-types"
+                                role="tab" aria-controls="forecast-types" aria-selected="false" style="color: #0080ff; font-weight: bold;">
+                                Forecast <br> Types
+                            </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="calculate-forecast-tab" data-bs-toggle="tab" data-bs-target="#calculate-forecast"
+                                role="tab" aria-controls="sales-forecast" aria-selected="false" style="color: #0080ff; font-weight: bold;">
+                                Calculate <br> Forecast
+                            </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="cash-forecast-tab" data-bs-toggle="tab" data-bs-target="#cash-forecast"
+                                role="tab" aria-controls="cash-forecast" aria-selected="false" style="color: #0080ff; font-weight: bold;">
+                                Cash <br> Forecast
+                            </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="cash-budget-forecast-tab" data-bs-toggle="tab" data-bs-target="#cash-budget-forecast"
+                                role="tab" aria-controls="cash-budget-forecast" aria-selected="false" style="color: #0080ff; font-weight: bold;">
+                                Budget
+                            </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="smart-reporting-tab" data-bs-toggle="tab" data-bs-target="#smart-reporting"
+                                role="tab" aria-controls="smart-reporting" aria-selected="false" style="color: #0080ff; font-weight: bold;">
+                                Reporting
+                            </a>
+                        </li>
+                    </ul>
+                    
+                    <div class="tab-content tab-content text-left px-3 py-5 px-md-5 border border-top-0 bg-white" id="myTabContent">
+                        <!-- Dashboard START-->
+                        <div class="tab-pane fade show active" id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
+                            <div class="row o_v_align_col_sm">
+                                <div class="col-sm-12">
+                                    <ul class="list-unstyled pl-0  bg-white" style="font-size:15px;">
+                                    <li class="d-flex align-items-baseline mb-2 p-3 font-weight-bold" style="border-radius: 10px;font-size: 16px;">
+                                        <span class="text-center " style="font-size: 40px;font-weight: 400;color: #8482b2;">
+                                            <section class="oe_container mt32">
+                                                <div id="demo" class="row carousel slide mt64 mb32" data-bs-ride="carousel">
+                                                    <div class="carousel-inner">
+                                                        <div class="carousel-item active" style="height:auto;">
+                                                            <div class="col-xs-12 col-sm-4 col-md-12 mb16 mt16" style="float:left">
+                                                                <div style="border-radius:10px" class="shadow-sm">
+                                                                    <img class="img img-responsive center-block" style="border-top-left-radius:10px; border-top-right-radius:10px" src="images/screenshots/1-dashboard/cash&budgetforecast-images-1.jpg" width="100%" height="100%">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="carousel-item" style="height:auto;">
+                                                            <div class="col-xs-12 col-sm-4 col-md-12 mb16 mt16" style="float:left">
+                                                                <div style="border-radius:10px" class="shadow-sm">
+                                                                    <img class="img img-responsive center-block" style="border-top-left-radius:10px; border-top-right-radius:10px" src="images/screenshots/1-dashboard/cash&budgetforecast-images-2.jpg" width="100%" height="100%">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="carousel-item" style="height:auto;">
+                                                            <div class="col-xs-12 col-sm-4 col-md-12 mb16 mt16" style="float:left">
+                                                                <div style="border-radius:10px" class="shadow-sm">
+                                                                    <img class="img img-responsive center-block" style="border-top-left-radius:10px; border-top-right-radius:10px" src="images/screenshots/1-dashboard/cash&budgetforecast-images-3.jpg" width="100%" height="100%">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="carousel-item" style="height:auto;">
+                                                            <div class="col-xs-12 col-sm-4 col-md-12 mb16 mt16" style="float:left">
+                                                                <div style="border-radius:10px" class="shadow-sm">
+                                                                    <img class="img img-responsive center-block" style="border-top-left-radius:10px; border-top-right-radius:10px" src="images/screenshots/1-dashboard/cash&budgetforecast-images-4.jpg" width="100%" height="100%">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <a class="carousel-control-prev" href="#demo" data-bs-slide="prev" style="margin-left:-30px; width:35px; color:#000">
+                                                        <span class="carousel-control-prev-icon">
+                                                            <i class="fa fa-arrow-circle-left" style="font-size:24px; color:#704A66"></i>
+                                                        </span>
+                                                    </a>
+                                                    <a class="carousel-control-next" href="#demo" data-bs-slide="next" style="margin-right:-30px; width:35px; color:#000">
+                                                        <span class="carousel-control-next-icon">
+                                                            <i class="fa fa-arrow-circle-right" style="font-size:24px; color:#704A66"></i>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </section>
+                                        </span>
+                                    </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Dashboard END -->
+                        
+                        <!-- Configuration START -->
+                        <div class="tab-pane fade" id="configuration" role="tabpanel" aria-labelledby="configuration-tab">
+                            <div class="row o_v_align_col_sm">
+                                <div class="col-sm-12">
+                                    <ul class="list-unstyled pl-0  bg-white" style="font-size:15px;">
+                                        <li class="d-flex align-items-baseline mb-2 p-3 font-weight-bold" style="border-radius: 10px;font-size: 16px;">
+                                            <span class="text-center " style="font-size: 40px;font-weight: 400;color: #8482b2;">
+                                            <section class="oe_container mt32">
+                                                <div id="demo2" class="row carousel slide mt64 mb32" data-bs-ride="carousel">
+                                                    <div class="carousel-inner">
+                                                        <div class="carousel-item active" style="height:auto;">
+                                                            <div class="col-xs-12 col-sm-4 col-md-12 mb16 mt16" style="float:left">
+                                                                <div style="border-radius:10px" class="shadow-sm">
+                                                                    <img class="img img-responsive center-block" style="border-top-left-radius:10px; border-top-right-radius:10px" src="images/screenshots/2-fiscal-year-period/cash&budgetforecast-images-13.jpg" width="100%" height="100%">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="carousel-item" style="height:auto;">
+                                                            <div class="col-xs-12 col-sm-4 col-md-12 mb16 mt16" style="float:left">
+                                                                <div style="border-radius:10px" class="shadow-sm">
+                                                                    <img class="img img-responsive center-block" style="border-top-left-radius:10px; border-top-right-radius:10px" src="images/screenshots/2-fiscal-year-period/cash&budgetforecast-images-14.jpg" width="100%" height="100%">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="carousel-item" style="height:auto;">
+                                                            <div class="col-xs-12 col-sm-4 col-md-12 mb16 mt16" style="float:left">
+                                                                <div style="border-radius:10px" class="shadow-sm">
+                                                                    <img class="img img-responsive center-block" style="border-top-left-radius:10px; border-top-right-radius:10px" src="images/screenshots/2-fiscal-year-period/cash&budgetforecast-images-15.jpg" width="100%" height="100%">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="carousel-item" style="height:auto;">
+                                                            <div class="col-xs-12 col-sm-4 col-md-12 mb16 mt16" style="float:left">
+                                                                <div style="border-radius:10px" class="shadow-sm">
+                                                                    <img class="img img-responsive center-block" style="border-top-left-radius:10px; border-top-right-radius:10px" src="images/screenshots/2-fiscal-year-period/cash&budgetforecast-images-16.jpg" width="100%" height="100%">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="carousel-item" style="height:auto;">
+                                                            <div class="col-xs-12 col-sm-4 col-md-12 mb16 mt16" style="float:left">
+                                                                <div style="border-radius:10px" class="shadow-sm">
+                                                                    <img class="img img-responsive center-block" style="border-top-left-radius:10px; border-top-right-radius:10px" src="images/screenshots/2-fiscal-year-period/cash&budgetforecast-images-17.jpg" width="100%" height="100%">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <a class="carousel-control-prev" href="#demo2" data-bs-slide="prev" style="margin-left:-30px; width:35px; color:#000">
+                                                        <span class="carousel-control-prev-icon">
+                                                            <i class="fa fa-arrow-circle-left" style="font-size:24px; color:#704A66"></i>
+                                                        </span>
+                                                    </a>
+                                                    <a class="carousel-control-next" href="#demo2" data-bs-slide="next" style="margin-right:-30px; width:35px; color:#000">
+                                                        <span class="carousel-control-next-icon">
+                                                            <i class="fa fa-arrow-circle-right" style="font-size:24px; color:#704A66"></i>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </section>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Configuration END -->
+
+                        <!-- Forecast Categories START -->
+                        <div class="tab-pane fade" id="forecast-categories" role="tabpanel" aria-labelledby="forecast-categories-tab">
+                            <div class="row o_v_align_col_sm">
+                                <div class="col-sm-12">
+                                    <ul class="list-unstyled pl-0  bg-white" style="font-size:15px;">
+                                        <li class="d-flex align-items-baseline mb-2 p-3 font-weight-bold" style="border-radius: 10px;font-size: 16px;">
+                                            <span class="text-center " style="font-size: 40px;font-weight: 400;color: #8482b2;">
+                                            <!-- Screenshots start -->
+                                            <section class="oe_container mt32">
+                                                <div id="demo3" class="row carousel slide mt64 mb32" data-bs-ride="carousel">
+                                                    <div class="carousel-inner">
+                                                        <div class="carousel-item active" style="height:auto;">
+                                                            <div class="col-xs-12 col-sm-4 col-md-12 mb16 mt16" style="float:left">
+                                                                <div style="border-radius:10px" class="shadow-sm">
+                                                                    <img class="img img-responsive center-block" style="border-top-left-radius:10px; border-top-right-radius:10px" src="images/screenshots/3-forecast-categories/cash&budgetforecast-images-7.jpg" width="100%" height="100%">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="carousel-item" style="height:auto;">
+                                                            <div class="col-xs-12 col-sm-4 col-md-12 mb16 mt16" style="float:left">
+                                                                <div style="border-radius:10px" class="shadow-sm">
+                                                                    <img class="img img-responsive center-block" style="border-top-left-radius:10px; border-top-right-radius:10px" src="images/screenshots/3-forecast-categories/cash&budgetforecast-images-8.jpg" width="100%" height="100%">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="carousel-item" style="height:auto;">
+                                                            <div class="col-xs-12 col-sm-4 col-md-12 mb16 mt16" style="float:left">
+                                                                <div style="border-radius:10px" class="shadow-sm">
+                                                                    <img class="img img-responsive center-block" style="border-top-left-radius:10px; border-top-right-radius:10px" src="images/screenshots/3-forecast-categories/cash&budgetforecast-images-9.jpg" width="100%" height="100%">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <a class="carousel-control-prev" href="#demo3" data-bs-slide="prev" style="margin-left:-30px; width:35px; color:#000">
+                                                        <span class="carousel-control-prev-icon">
+                                                            <i class="fa fa-arrow-circle-left" style="font-size:24px; color:#704A66"></i>
+                                                        </span>
+                                                    </a>
+                                                    <a class="carousel-control-next" href="#demo3" data-bs-slide="next" style="margin-right:-30px; width:35px; color:#000">
+                                                        <span class="carousel-control-next-icon">
+                                                            <i class="fa fa-arrow-circle-right" style="font-size:24px; color:#704A66"></i>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </section>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Forecast Categories END -->
+
+                        <!-- Forecast Types START -->
+                        <div class="tab-pane fade" id="forecast-types" role="tabpanel" aria-labelledby="forecast-types-tab">
+                            <div class="row o_v_align_col_sm">
+                                <div class="col-sm-12">
+                                    <ul class="list-unstyled pl-0  bg-white" style="font-size:15px;">
+                                        <li class="d-flex align-items-baseline mb-2 p-3 font-weight-bold" style="border-radius: 10px;font-size: 16px;">
+                                            <span class="text-center " style="font-size: 40px;font-weight: 400;color: #8482b2;">
+                                            <!-- Screenshots start -->
+                                            <section class="oe_container mt32">
+                                                <div id="demo4" class="row carousel slide mt64 mb32" data-bs-ride="carousel">
+                                                    <div class="carousel-inner">
+                                                        <div class="carousel-item active" style="height:auto;">
+                                                            <div class="col-xs-12 col-sm-4 col-md-12 mb16 mt16" style="float:left">
+                                                                <div style="border-radius:10px" class="shadow-sm">
+                                                                    <img class="img img-responsive center-block" style="border-top-left-radius:10px; border-top-right-radius:10px" src="images/screenshots/4-cash-forecast-types/cash&budgetforecast-images-10.jpg"width="100%" height="100%">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="carousel-item" style="height:auto;">
+                                                            <div class="col-xs-12 col-sm-4 col-md-12 mb16 mt16" style="float:left">
+                                                                <div style="border-radius:10px" class="shadow-sm">
+                                                                    <img class="img img-responsive center-block" style="border-top-left-radius:10px; border-top-right-radius:10px" src="images/screenshots/4-cash-forecast-types/cash&budgetforecast-images-11.jpg"width="100%" height="100%">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="carousel-item" style="height:auto;">
+                                                            <div class="col-xs-12 col-sm-4 col-md-12 mb16 mt16" style="float:left">
+                                                                <div style="border-radius:10px" class="shadow-sm">
+                                                                    <img class="img img-responsive center-block" style="border-top-left-radius:10px; border-top-right-radius:10px" src="images/screenshots/4-cash-forecast-types/cash&budgetforecast-images-12.jpg"width="100%" height="100%">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="carousel-item" style="height:auto;">
+                                                            <div class="col-xs-12 col-sm-4 col-md-12 mb16 mt16" style="float:left">
+                                                                <div style="border-radius:10px" class="shadow-sm">
+                                                                    <img class="img img-responsive center-block" style="border-top-left-radius:10px; border-top-right-radius:10px" src="images/screenshots/4-cash-forecast-types/cash&budgetforecast-images-18.jpg"width="100%" height="100%">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <a class="carousel-control-prev" href="#demo4" data-bs-slide="prev" style="margin-left:-30px; width:35px; color:#000">
+                                                        <span class="carousel-control-prev-icon">
+                                                            <i class="fa fa-arrow-circle-left" style="font-size:24px; color:#704A66"></i>
+                                                        </span>
+                                                    </a>
+                                                    <a class="carousel-control-next" href="#demo4" data-bs-slide="next" style="margin-right:-30px; width:35px; color:#000">
+                                                        <span class="carousel-control-next-icon">
+                                                            <i class="fa fa-arrow-circle-right" style="font-size:24px; color:#704A66"></i>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </section>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Forecast Types END -->
+
+                        <!-- calculate-forecast START -->
+                        <div class="tab-pane fade" id="calculate-forecast" role="tabpanel" aria-labelledby="calculate-forecast-tab">
+                            <div class="row o_v_align_col_sm">
+                                <div class="col-sm-12">
+                                    <ul class="list-unstyled pl-0  bg-white" style="font-size:15px;">
+                                        <li class="d-flex align-items-baseline mb-2 p-3 font-weight-bold" style="border-radius: 10px;font-size: 16px;">
+                                            <span class="text-center " style="font-size: 40px;font-weight: 400;color: #8482b2;">
+                                            <!-- Screenshots start -->
+                                            <section class="oe_container mt32">
+                                                <div id="demo7" class="row carousel slide mt64 mb32" data-bs-ride="carousel">
+                                                    <div class="carousel-inner">
+                                                        <div class="carousel-item active" style="height:auto;">
+                                                            <div class="col-xs-12 col-sm-4 col-md-12 mb16 mt16" style="float:left">
+                                                                <div style="border-radius:10px" class="shadow-sm">
+                                                                    <img class="img img-responsive center-block" style="border-top-left-radius:10px; border-top-right-radius:10px" src="images/screenshots/5-calculate-forecast/cash&budgetforecast-images-5.jpg" width="100%" height="100%">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </section>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- calculate-forecast END -->
+
+                        <!-- Cash Forecast START -->
+                        <div class="tab-pane fade" id="cash-forecast" role="tabpanel" aria-labelledby="cash-forecast-tab">
+                            <div class="row o_v_align_col_sm">
+                                <div class="col-sm-12">
+                                    <ul class="list-unstyled pl-0  bg-white" style="font-size:15px;">
+                                        <li class="d-flex align-items-baseline mb-2 p-3 font-weight-bold" style="border-radius: 10px;font-size: 16px;">
+                                            <span class="text-center " style="font-size: 40px;font-weight: 400;color: #8482b2;">
+                                            <!-- Screenshots start -->
+                                            <section class="oe_container mt32">
+                                                <div id="demo5" class="row carousel slide mt64 mb32" data-bs-ride="carousel">
+                                                    <div class="carousel-inner">
+                                                        <div class="carousel-item active" style="height:auto;">
+                                                            <div class="col-xs-12 col-sm-4 col-md-12 mb16 mt16" style="float:left">
+                                                                <div style="border-radius:10px" class="shadow-sm">
+                                                                    <img class="img img-responsive center-block" style="border-top-left-radius:10px; border-top-right-radius:10px" src="images/screenshots/6-cash-forecast/cash&budgetforecast-images-6.jpg" width="100%" height="100%">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </section>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Cash Forecast END -->
+
+                        <!-- Cash & Budget Forecast START -->
+                        <div class="tab-pane fade" id="cash-budget-forecast" role="tabpanel" aria-labelledby="cash-budget-forecast-tab">
+                            <div class="row o_v_align_col_sm">
+                                <div class="col-sm-12">
+                                    <ul class="list-unstyled pl-0  bg-white" style="font-size:15px;">
+                                        <li class="d-flex align-items-baseline mb-2 p-3 font-weight-bold" style="border-radius: 10px;font-size: 16px;">
+                                            <span class="text-center " style="font-size: 40px;font-weight: 400;color: #8482b2;">
+                                            <!-- Screenshots start -->
+                                            <section class="oe_container mt32">
+                                                <div id="demo8" class="row carousel slide mt64 mb32" data-bs-ride="carousel">
+                                                    <div class="carousel-inner">
+                                                        <div class="carousel-item active" style="height:auto;">
+                                                            <div class="col-xs-12 col-sm-4 col-md-12 mb16 mt16" style="float:left">
+                                                                <div style="border-radius:10px" class="shadow-sm">
+                                                                    <img class="img img-responsive center-block" style="border-top-left-radius:10px; border-top-right-radius:10px" src="images/screenshots/7-budget/cash&budgetforecast-images-19.jpg" width="100%" height="100%">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="carousel-item" style="height:auto;">
+                                                            <div class="col-xs-12 col-sm-4 col-md-12 mb16 mt16" style="float:left">
+                                                                <div style="border-radius:10px" class="shadow-sm">
+                                                                    <img class="img img-responsive center-block" style="border-top-left-radius:10px; border-top-right-radius:10px" src="images/screenshots/7-budget/cash&budgetforecast-images-20.jpg" width="100%" height="100%">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="carousel-item" style="height:auto;">
+                                                            <div class="col-xs-12 col-sm-4 col-md-12 mb16 mt16" style="float:left">
+                                                                <div style="border-radius:10px" class="shadow-sm">
+                                                                    <img class="img img-responsive center-block" style="border-top-left-radius:10px; border-top-right-radius:10px" src="images/screenshots/7-budget/cash&budgetforecast-images-21.jpg" width="100%" height="100%">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="carousel-item" style="height:auto;">
+                                                            <div class="col-xs-12 col-sm-4 col-md-12 mb16 mt16" style="float:left">
+                                                                <div style="border-radius:10px" class="shadow-sm">
+                                                                    <img class="img img-responsive center-block" style="border-top-left-radius:10px; border-top-right-radius:10px" src="images/screenshots/7-budget/cash&budgetforecast-images-22.jpg" width="100%" height="100%">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="carousel-item" style="height:auto;">
+                                                            <div class="col-xs-12 col-sm-4 col-md-12 mb16 mt16" style="float:left">
+                                                                <div style="border-radius:10px" class="shadow-sm">
+                                                                    <img class="img img-responsive center-block" style="border-top-left-radius:10px; border-top-right-radius:10px" src="images/screenshots/7-budget/cash&budgetforecast-images-23.jpg" width="100%" height="100%">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <a class="carousel-control-prev" href="#demo8" data-bs-slide="prev" style="margin-left:-30px; width:35px; color:#000">
+                                                        <span class="carousel-control-prev-icon">
+                                                            <i class="fa fa-arrow-circle-left" style="font-size:24px; color:#704A66"></i>
+                                                        </span>
+                                                    </a>
+                                                    <a class="carousel-control-next" href="#demo8" data-bs-slide="next" style="margin-right:-30px; width:35px; color:#000">
+                                                        <span class="carousel-control-next-icon">
+                                                            <i class="fa fa-arrow-circle-right" style="font-size:24px; color:#704A66"></i>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </section>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Cash & Budget Forecast END -->
+
+                        <!-- Smart Reporting START -->
+                        <div class="tab-pane fade" id="smart-reporting" role="tabpanel" aria-labelledby="smart-reporting-tab">
+                            <div class="row o_v_align_col_sm">
+                                <div class="col-sm-12">
+                                    <ul class="list-unstyled pl-0  bg-white" style="font-size:15px;">
+                                        <li class="d-flex align-items-baseline mb-2 p-3 font-weight-bold" style="border-radius: 10px;font-size: 16px;">
+                                            <span class="text-center " style="font-size: 40px;font-weight: 400;color: #8482b2;">
+                                            <section class="oe_container mt32">
+                                                <div id="demo6" class="row carousel slide mt64 mb32" data-bs-ride="carousel">
+                                                    <div class="carousel-inner">
+                                                        <div class="carousel-item active" style="height:auto;">
+                                                            <div class="col-xs-12 col-sm-4 col-md-12 mb16 mt16" style="float:left">
+                                                                <div style="border-radius:10px" class="shadow-sm">
+                                                                    <img class="img img-responsive center-block" style="border-top-left-radius:10px; border-top-right-radius:10px" src="images/screenshots/8-reports-forecast-analysis/cash&budgetforecast-images-24.jpg" width="100%" height="100%">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="carousel-item" style="height:auto;">
+                                                            <div class="col-xs-12 col-sm-4 col-md-12 mb16 mt16" style="float:left">
+                                                                <div style="border-radius:10px" class="shadow-sm">
+                                                                    <img class="img img-responsive center-block" style="border-top-left-radius:10px; border-top-right-radius:10px" src="images/screenshots/8-reports-forecast-analysis/cash&budgetforecast-images-25.jpg" width="100%" height="100%">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="carousel-item" style="height:auto;">
+                                                            <div class="col-xs-12 col-sm-4 col-md-12 mb16 mt16" style="float:left">
+                                                                <div style="border-radius:10px" class="shadow-sm">
+                                                                    <img class="img img-responsive center-block" style="border-top-left-radius:10px; border-top-right-radius:10px" src="images/screenshots/8-reports-forecast-analysis/cash&budgetforecast-images-26.jpg" width="100%" height="100%">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="carousel-item" style="height:auto;">
+                                                            <div class="col-xs-12 col-sm-4 col-md-12 mb16 mt16" style="float:left">
+                                                                <div style="border-radius:10px" class="shadow-sm">
+                                                                    <img class="img img-responsive center-block" style="border-top-left-radius:10px; border-top-right-radius:10px" src="images/screenshots/8-reports-forecast-analysis/cash&budgetforecast-images-27.jpg" width="100%" height="100%">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="carousel-item" style="height:auto;">
+                                                            <div class="col-xs-12 col-sm-4 col-md-12 mb16 mt16" style="float:left">
+                                                                <div style="border-radius:10px" class="shadow-sm">
+                                                                    <img class="img img-responsive center-block" style="border-top-left-radius:10px; border-top-right-radius:10px" src="images/screenshots/8-reports-forecast-analysis/cash&budgetforecast-images-28.jpg" width="100%" height="100%">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="carousel-item" style="height:auto;">
+                                                            <div class="col-xs-12 col-sm-4 col-md-12 mb16 mt16" style="float:left">
+                                                                <div style="border-radius:10px" class="shadow-sm">
+                                                                    <img class="img img-responsive center-block" style="border-top-left-radius:10px; border-top-right-radius:10px" src="images/screenshots/8-reports-forecast-analysis/cash&budgetforecast-images-29.jpg" width="100%" height="100%">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="carousel-item" style="height:auto;">
+                                                            <div class="col-xs-12 col-sm-4 col-md-12 mb16 mt16" style="float:left">
+                                                                <div style="border-radius:10px" class="shadow-sm">
+                                                                    <img class="img img-responsive center-block" style="border-top-left-radius:10px; border-top-right-radius:10px" src="images/screenshots/8-reports-forecast-analysis/cash&budgetforecast-images-30.jpg" width="100%" height="100%">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="carousel-item" style="height:auto;">
+                                                            <div class="col-xs-12 col-sm-4 col-md-12 mb16 mt16" style="float:left">
+                                                                <div style="border-radius:10px" class="shadow-sm">
+                                                                    <img class="img img-responsive center-block" style="border-top-left-radius:10px; border-top-right-radius:10px" src="images/screenshots/8-reports-forecast-analysis/cash&budgetforecast-images-31.jpg" width="100%" height="100%">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="carousel-item" style="height:auto;">
+                                                            <div class="col-xs-12 col-sm-4 col-md-12 mb16 mt16" style="float:left">
+                                                                <div style="border-radius:10px" class="shadow-sm">
+                                                                    <img class="img img-responsive center-block" style="border-top-left-radius:10px; border-top-right-radius:10px" src="images/screenshots/8-reports-forecast-analysis/cash&budgetforecast-images-32.jpg" width="100%" height="100%">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <a class="carousel-control-prev" href="#demo6" data-bs-slide="prev" style="margin-left:-30px; width:35px; color:#000">
+                                                        <span class="carousel-control-prev-icon">
+                                                            <i class="fa fa-arrow-circle-left" style="font-size:24px; color:#704A66"></i>
+                                                        </span>
+                                                    </a>
+                                                    <a class="carousel-control-next" href="#demo6" data-bs-slide="next" style="margin-right:-30px; width:35px; color:#000">
+                                                        <span class="carousel-control-next-icon">
+                                                            <i class="fa fa-arrow-circle-right" style="font-size:24px; color:#704A66"></i>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </section>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Smart Reporting END -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- SCREENSHOT - END -->
+</div>
+
+<!-- ProcureMate Pro Solution START-->
+<section class="index-banner shadow-sm position-relative mt40" style="border-top:4px solid #37bbf9; border-radius: 10px; margin-top: 20px;">
+    <div class="container p-md-4 p-4 position-relative">   
+        <div class="col-lg-12">
+            <div class="row text-center">
+                <div class="col-lg-6">
+                    <div style="padding: 20px;width: 100%;">
+                        <div class="sh_dec">
+                            <a href="https://www.procuremate.pro" target="_blank" style="color:#ffffff; font-weight:600;">
+                                <img src="images/procuremate-setu-consulting-odoo-erp-consultant.png" width="50%" height="50%">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div style="padding: 20px;width: 100%;">
+                        <div class="w-100 w-md-75 w-lg-100 my-1 pl-3 text-nowrap text-truncate btn btn-info rounded" style="vertical-align: middle;margin-top:15px">
+                            <i class="fa fa-envelope fa-fw" style="font-size:1.2rem;"></i>
+                            <a href="mailto:sales@procuremate.pro" target="_blank" style="color:#ffffff; font-weight:600;">sales@procuremate.pro</a>
+                            <i class="fa fa-chrome fa-fw" style="font-size:1.2rem;"></i>
+                            <a href="https://www.procuremate.pro" target="_blank" style="color:#ffffff; font-weight:600;">www.procuremate.pro</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="img_dec shadow mt-4" style="padding: 20px;align-items: center;display: inline-flex; border-radius: 10px;">
+                        <div class="sh_inner_box d-flex align-items-baseline">
+                            <div class="sh_dec">
+                                <h5 style="font-size: 20px;line-height: 1.455;font-weight: 600;color: #1e266d;">
+                                    Revolutionizing Procurement Management with a Comprehensive Tender Management System
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="procuremate" class="row carousel slide mt64 mb32" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" style="height:auto;">
+                    <div class="col-xs-12 col-sm-4 col-md-12 mb16 mt16" style="float:left">
+                        <div style="border-radius:10px" class="shadow-sm">
+                            <img class="img img-responsive center-block" style="border-top-left-radius:10px; border-top-right-radius:10px" src="images/ProcureMate/1.jpg" width="100%" height="100%">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" style="height:auto;">
+                    <div class="col-xs-12 col-sm-4 col-md-12 mb16 mt16" style="float:left">
+                        <div style="border-radius:10px" class="shadow-sm">
+                            <img class="img img-responsive center-block" style="border-top-left-radius:10px; border-top-right-radius:10px" src="images/ProcureMate/2.jpg" width="100%" height="100%">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" style="height:auto;">
+                    <div class="col-xs-12 col-sm-4 col-md-12 mb16 mt16" style="float:left">
+                        <div style="border-radius:10px" class="shadow-sm">
+                            <img class="img img-responsive center-block" style="border-top-left-radius:10px; border-top-right-radius:10px" src="images/ProcureMate/3.jpg" width="100%" height="100%">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" style="height:auto;">
+                    <div class="col-xs-12 col-sm-4 col-md-12 mb16 mt16" style="float:left">
+                        <div style="border-radius:10px" class="shadow-sm">
+                            <img class="img img-responsive center-block" style="border-top-left-radius:10px; border-top-right-radius:10px" src="images/ProcureMate/4.jpg" width="100%" height="100%">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" style="height:auto;">
+                    <div class="col-xs-12 col-sm-4 col-md-12 mb16 mt16" style="float:left">
+                        <div style="border-radius:10px" class="shadow-sm">
+                            <img class="img img-responsive center-block" style="border-top-left-radius:10px; border-top-right-radius:10px" src="images/ProcureMate/5.jpg" width="100%" height="100%">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" style="height:auto;">
+                    <div class="col-xs-12 col-sm-4 col-md-12 mb16 mt16" style="float:left">
+                        <div style="border-radius:10px" class="shadow-sm">
+                            <img class="img img-responsive center-block" style="border-top-left-radius:10px; border-top-right-radius:10px" src="images/ProcureMate/6.jpg" width="100%" height="100%">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" style="height:auto;">
+                    <div class="col-xs-12 col-sm-4 col-md-12 mb16 mt16" style="float:left">
+                        <div style="border-radius:10px" class="shadow-sm">
+                            <img class="img img-responsive center-block" style="border-top-left-radius:10px; border-top-right-radius:10px" src="images/ProcureMate/7.jpg" width="100%" height="100%">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" style="height:auto;">
+                    <div class="col-xs-12 col-sm-4 col-md-12 mb16 mt16" style="float:left">
+                        <div style="border-radius:10px" class="shadow-sm">
+                            <img class="img img-responsive center-block" style="border-top-left-radius:10px; border-top-right-radius:10px" src="images/ProcureMate/8.jpg" width="100%" height="100%">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" style="height:auto;">
+                    <div class="col-xs-12 col-sm-4 col-md-12 mb16 mt16" style="float:left">
+                        <div style="border-radius:10px" class="shadow-sm">
+                            <img class="img img-responsive center-block" style="border-top-left-radius:10px; border-top-right-radius:10px" src="images/ProcureMate/9.jpg" width="100%" height="100%">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" style="height:auto;">
+                    <div class="col-xs-12 col-sm-4 col-md-12 mb16 mt16" style="float:left">
+                        <div style="border-radius:10px" class="shadow-sm">
+                            <img class="img img-responsive center-block" style="border-top-left-radius:10px; border-top-right-radius:10px" src="images/ProcureMate/10.jpg" width="100%" height="100%">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" style="height:auto;">
+                    <div class="col-xs-12 col-sm-4 col-md-12 mb16 mt16" style="float:left">
+                        <div style="border-radius:10px" class="shadow-sm">
+                            <img class="img img-responsive center-block" style="border-top-left-radius:10px; border-top-right-radius:10px" src="images/ProcureMate/11.jpg" width="100%" height="100%">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#procuremate" data-bs-slide="prev" style="margin-left:-30px; width:35px; color:#000">
+                <span class="carousel-control-prev-icon">
+                    <i class="fa fa-arrow-circle-left" style="font-size:24px; color:#704A66"></i>
+                </span>
+            </a>
+            <a class="carousel-control-next" href="#procuremate" data-bs-slide="next" style="margin-right:-30px; width:35px; color:#000">
+                <span class="carousel-control-next-icon">
+                    <i class="fa fa-arrow-circle-right" style="font-size:24px; color:#704A66"></i>
+                </span>
+            </a>
+        </div>
+    </div>
+</section>
+<!-- ProcureMate Pro Solution END-->
+
+<!-- Contact Details START-->
+<section class="index-banner shadow-sm position-relative mt40" style="border-top:4px solid #37bbf9; border-radius: 10px; margin-top: 20px;">
+    <img class="w-100 h-100 position-absolute img-fluid mb16" src="images/etc/1-background.jpg" style="border-radius: 10px;" />
+    <div class="container p-md-4 p-4 position-relative">
+        <div class="row align-items-center">
+            <div class="col-lg-4 text-center mb-5 mb-lg-0">
+                <div class="h3 p-2 mb-2 font-weight-bold">Contact Us</div> 
+                <div class="w-100 w-md-75 w-lg-100 my-1 pl-3 text-nowrap text-truncate btn btn-info rounded">
+                    <i class="fa fa-envelope fa-fw" style="font-size:1.2rem;"></i>
+                    <a href="mailto:support@setuconsulting.com" target="_blank" style="color:#ffffff; font-weight:600;">support@setuconsulting.com</a>
+                </div>
+                <div class="w-100 w-md-75 w-lg-100 my-1 pl-3 text-nowrap text-truncate btn btn-info rounded">
+                    <i class="fa fa-whatsapp fa-fw" style="font-size:1.2rem;"></i>
+                    <span>WhatsApp: </span>
+                    <a href="tel:+91 91572 07037" target="_blank" style="color:#ffffff; font-weight:600;">+91 91572 07037</a>
+                </div>
+                <div class="w-100 w-md-75 w-lg-100 m-auto my-1 pl-3 text-nowrap text-truncate btn-light border border-dark rounded" style="line-height: 2.4rem;">
+                    <a href="https://setuconsulting.com/contactus" target="_blank">www.setuconsulting.com</a>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 border-left border-right" style="border-left: 10px;">
+                <div class="h3 p-2 mb-3 text-center font-weight-bold">Odoo Certified Partner</div> 
+                <div class="text-left">
+                    <div class="my-3 pl-3 text-nowrap text-truncate lead text-white" data-container="body" data-toggle="popover" data-placement="top">
+                        <img src="images/odoo15.png" width="100px" alt="Odoo 15 Certified" title="Odoo 15 Certified"> 
+                        <img src="images/odoo16.png" width="100px" alt="Odoo 16 Certified" title="Odoo 16 Certified"> 
+                        <img src="images/odoo17.png" width="100px" alt="Odoo 16 Certified" title="Odoo 17 Certified"> 
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 mt-5 mt-lg-0">
+                <div class="h4 p-2 text-center font-weight-bold">Watch and subscribe</div> 
+                <div class="text-center">
+                    <a href="https://www.youtube.com/@setuconsulting" target="_blank">
+                        <img src="images/youtube.png" width="200px">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Contact Details END-->
+
+<!-- Suggested Solution START-->
+<section class="index-banner shadow-sm position-relative mt40" style="border-top:4px solid #37bbf9; border-radius: 10px; margin-top: 20px;">
+    <div class="container p-md-4 p-4 position-relative">   
+        <section class="oe_container mt32">
+            <h3 style='color:#091E42; font-family:"Montserrat"; text-align:center; margin:25px auto; text-transform:uppercase' class="oe_slogan">
+                <b>Suggested Solutions</b>
+            </h3> 
+            <div id="demo9" class="row carousel slide mt32 mb32" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" style="height:40%;">
+                        <a href="mailto:sales@procuremate.pro" target="_blank">
+                        <div class="col-xs-12 col-sm-4 col-md-12 mb16 mt16" style="float:left">
+                            <div style="border-radius:10px" class="shadow-sm">
+                                <img class="img img-responsive center-block" style="border-top-left-radius:10px; border-top-right-radius:10px" src="images/solutions_images/procurement-management-system-setu-consulting-odoo-erp-consultant.jpg" width="100%" height="100%">
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="carousel-item" style="height:40%;">
+                        <a href="https://apps.odoocdn.com/apps/modules/17.0/setu_advance_reordering" target="_blank">
+                        <div class="col-xs-12 col-sm-4 col-md-12 mb16 mt16" style="float:left">
+                            <div style="border-radius:10px" class="shadow-sm">
+                                <img class="img img-responsive center-block" style="border-top-left-radius:10px; border-top-right-radius:10px" src="images/solutions_images/advance-reordering-setu-consulting-odoo-erp-consultant.jpg" width="100%" height="100%">
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="carousel-item" style="height:40%;">
+                        <div class="col-xs-12 col-sm-4 col-md-12 mb16 mt16" style="float:left">
+                            <div style="border-radius:10px" class="shadow-sm">
+                                <a href="https://apps.odoocdn.com/apps/modules/17.0/setu_advance_inventory_reports" target="_blank">
+                                <img class="img img-responsive center-block" style="border-top-left-radius:10px; border-top-right-radius:10px" src="images/solutions_images/advance-inventory-reports-setu-consulting-odoo-erp-consultant.jpg" width="100%" height="100%">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" style="height:40%;">
+                        <div class="col-xs-12 col-sm-4 col-md-12 mb16 mt16" style="float:left">
+                            <div style="border-radius:10px" class="shadow-sm">
+                                <a href="https://apps.odoocdn.com/apps/modules/17.0/setu_inventory_count_management" target="_blank">
+                                <img class="img img-responsive center-block" style="border-top-left-radius:10px; border-top-right-radius:10px" src="images/solutions_images/inventory-count-setu-consulting-odoo-erp-consultant.jpg" width="100%" height="100%">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" style="height:40%;">
+                        <div class="col-xs-12 col-sm-4 col-md-12 mb16 mt16" style="float:left">
+                            <div style="border-radius:10px" class="shadow-sm">
+                                <a href="https://apps.odoocdn.com/apps/modules/17.0/setu_cash_flow_forecasting" target="_blank">
+                                <img class="img img-responsive center-block" style="border-top-left-radius:10px; border-top-right-radius:10px" src="images/solutions_images/cashforecast-setu-consulting-odoo-erp-consultant.jpg" width="100%" height="100%">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" style="height:40%;">
+                        <div class="col-xs-12 col-sm-4 col-md-12 mb16 mt16" style="float:left">
+                            <div style="border-radius:10px" class="shadow-sm">
+                                <a href="https://apps.odoocdn.com/apps/modules/17.0/setu_inventory_ledger_report" target="_blank">
+                                <img class="img img-responsive center-block" style="border-top-left-radius:10px; border-top-right-radius:10px" src="images/solutions_images/inventory-ledger-report-setu-consulting-odoo-erp-consultant.jpg" width="100%" height="100%">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" style="height:40%;">
+                        <div class="col-xs-12 col-sm-4 col-md-12 mb16 mt16" style="float:left">
+                            <div style="border-radius:10px" class="shadow-sm">
+                                <a href="https://apps.odoocdn.com/apps/modules/17.0/setu_intercompany_transaction" target="_blank">
+                                <img class="img img-responsive center-block" style="border-top-left-radius:10px; border-top-right-radius:10px" src="images/solutions_images/inter-company-transfer-setu-consulting-odoo-erp-consultant.jpg" width="100%" height="100%">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" style="height:40%;">
+                        <div class="col-xs-12 col-sm-4 col-md-12 mb16 mt16" style="float:left">
+                            <div style="border-radius:10px" class="shadow-sm">
+                                <a href="https://apps.odoocdn.com/apps/modules/17.0/setu_rfm_analysis" target="_blank">
+                                <img class="img img-responsive center-block" style="border-top-left-radius:10px; border-top-right-radius:10px" src="images/solutions_images/rfm-analysis-setu-consulting-odoo-erp-consultant.jpg" width="100%" height="100%">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" style="height:40%;">
+                        <div class="col-xs-12 col-sm-4 col-md-12 mb16 mt16" style="float:left">
+                            <div style="border-radius:10px" class="shadow-sm">
+                                <a href="https://apps.odoocdn.com/apps/modules/17.0/setu_rma" target="_blank">
+                                <img class="img img-responsive center-block" style="border-top-left-radius:10px; border-top-right-radius:10px" src="images/solutions_images/rma-setu-consulting-odoo-erp-consultant.jpg" width="100%" height="100%">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" style="height:40%;">
+                        <div class="col-xs-12 col-sm-4 col-md-12 mb16 mt16" style="float:left">
+                            <div style="border-radius:10px" class="shadow-sm">
+                                <a href="https://apps.odoocdn.com/apps/modules/17.0/setu_inventory_coverage_abc_analysis_report" target="_blank">
+                                <img class="img img-responsive center-block" style="border-top-left-radius:10px; border-top-right-radius:10px" src="images/solutions_images/ineventory-coverage-abc-analysis-setu-consulting-odoo-erp-consultant.jpg" width="100%" height="100%">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" style="height:40%;">
+                        <div class="col-xs-12 col-sm-4 col-md-12 mb16 mt16" style="float:left">
+                            <div style="border-radius:10px" class="shadow-sm">
+                                <a href="https://apps.odoocdn.com/apps/modules/17.0/setu_inventory_coverage_report" target="_blank">
+                                <img class="img img-responsive center-block" style="border-top-left-radius:10px; border-top-right-radius:10px" src="images/solutions_images/inventory-coverage-analysis-setu-consulting-odoo-erp-consultant.jpg" width="100%" height="100%">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" style="height:40%;">
+                        <div class="col-xs-12 col-sm-4 col-md-12 mb16 mt16" style="float:left">
+                            <div style="border-radius:10px" class="shadow-sm">
+                                <a href="https://apps.odoocdn.com/apps/modules/17.0/setu_customer_consignment" target="_blank">
+                                <img class="img img-responsive center-block" style="border-top-left-radius:10px; border-top-right-radius:10px" src="images/solutions_images/consignment-management-setu-consulting-odoo-erp-consultant.jpg" width="100%" height="100%">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" style="height:40%;">
+                        <div class="col-xs-12 col-sm-4 col-md-12 mb16 mt16" style="float:left">
+                            <div style="border-radius:10px" class="shadow-sm">
+                                <a href="https://apps.odoocdn.com/apps/modules/17.0/setu_asset_tracking" target="_blank">
+                                <img class="img img-responsive center-block" style="border-top-left-radius:10px; border-top-right-radius:10px" src="images/solutions_images/asset-tracking-setu-consulting-odoo-erp-consultant.jpg" width="100%" height="100%">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" style="height:40%;">
+                        <div class="col-xs-12 col-sm-4 col-md-12 mb16 mt16" style="float:left">
+                            <div style="border-radius:10px" class="shadow-sm">
+                                <a href="https://apps.odoocdn.com/apps/modules/17.0/setu_abc_analysis_reports" target="_blank">
+                                <img class="img img-responsive center-block" style="border-top-left-radius:10px; border-top-right-radius:10px" src="images/solutions_images/abc-sales-analysis-report-setu-consulting-odoo-erp-consultant.jpg.png" width="100%" height="100%">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" style="height:40%;">
+                        <div class="col-xs-12 col-sm-4 col-md-12 mb16 mt16" style="float:left">
+                            <div style="border-radius:10px" class="shadow-sm">
+                                <a href="https://apps.odoocdn.com/apps/modules/17.0/setu_shopify_connector" target="_blank">
+                                <img class="img img-responsive center-block" style="border-top-left-radius:10px; border-top-right-radius:10px" src="images/solutions_images/odoo-shopify-setu-consulting-odoo-erp-consultant.jpg" width="100%" height="100%">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" style="height:40%;">
+                        <div class="col-xs-12 col-sm-4 col-md-12 mb16 mt16" style="float:left">
+                            <div style="border-radius:10px" class="shadow-sm">
+                                <a href="https://apps.odoocdn.com/apps/modules/17.0/setu_woocommerce_connector" target="_blank">
+                                <img class="img img-responsive center-block" style="border-top-left-radius:10px; border-top-right-radius:10px" src="images/solutions_images/woocommerce-odoo-connector-setu-consulting-odoo-erp-consultant.jpg" width="100%" height="100%">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" style="height:40%;">
+                        <div class="col-xs-12 col-sm-4 col-md-12 mb16 mt16" style="float:left">
+                            <div style="border-radius:10px" class="shadow-sm">
+                                <a href="https://apps.odoocdn.com/apps/modules/17.0/setu_wayfair_connector" target="_blank">
+                                <img class="img img-responsive center-block" style="border-top-left-radius:10px; border-top-right-radius:10px" src="images/solutions_images/wayfair-connector-setu-consulting-odoo-erp-consultant.jpg" width="100%" height="100%">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" style="height:40%;">
+                        <div class="col-xs-12 col-sm-4 col-md-12 mb16 mt16" style="float:left">
+                            <div style="border-radius:10px" class="shadow-sm">
+                                <a href="https://apps.odoocdn.com/apps/modules/17.0/setu_sales_incentive" target="_blank">
+                                <img class="img img-responsive center-block" style="border-top-left-radius:10px; border-top-right-radius:10px" src="images/solutions_images/sales-incentive-commision-management-setu-consulting-odoo-erp-consultant.jpg" width="100%" height="100%">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" style="height:40%;">
+                        <div class="col-xs-12 col-sm-4 col-md-12 mb16 mt16" style="float:left">
+                            <div style="border-radius:10px" class="shadow-sm">
+                                <a href="https://apps.odoocdn.com/apps/modules/17.0/setu_sales_product_performance_report" target="_blank">
+                                <img class="img img-responsive center-block" style="border-top-left-radius:10px; border-top-right-radius:10px" src="images/solutions_images/sales-product-perfomance-setu-consulting-odoo-erp-consultant.jpg" width="100%" height="100%">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" style="height:40%;">
+                        <div class="col-xs-12 col-sm-4 col-md-12 mb16 mt16" style="float:left">
+                            <div style="border-radius:10px" class="shadow-sm">
+                                <a href="https://apps.odoocdn.com/apps/modules/17.0/setu_sales_purchase_price_tracker" target="_blank">
+                                <img class="img img-responsive center-block" style="border-top-left-radius:10px; border-top-right-radius:10px" src="images/solutions_images/sales-purchase-price-taker-setu-consulting-odoo-erp-consultant.jpg" width="100%" height="100%">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" style="height:40%;">
+                        <div class="col-xs-12 col-sm-4 col-md-12 mb16 mt16" style="float:left">
+                            <div style="border-radius:10px" class="shadow-sm">
+                                <a href="https://apps.odoocdn.com/apps/modules/17.0/setu_shipengine_integration" target="_blank">
+                                <img class="img img-responsive center-block" style="border-top-left-radius:10px; border-top-right-radius:10px" src="images/solutions_images/ship-engine-setu-consulting-odoo-erp-consultant.jpg" width="100%" height="100%">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" style="height:40%;">
+                        <div class="col-xs-12 col-sm-4 col-md-12 mb16 mt16" style="float:left">
+                            <div style="border-radius:10px" class="shadow-sm">
+                                <a href="https://apps.odoocdn.com/apps/modules/17.0/shopon_pos_theme" target="_blank">
+                                <img class="img img-responsive center-block" style="border-top-left-radius:10px; border-top-right-radius:10px" src="images/solutions_images/shop-on-pos-setu-consulting-odoo-erp-consultant.jpg" width="100%" height="100%">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#demo9" data-bs-slide="prev" style="margin-left:-30px; width:35px; color:#000">
+                    <span class="carousel-control-prev-icon">
+                        <i class="fa fa-arrow-circle-left" style="font-size:24px; color:#704A66"></i>
+                    </span>
+                </a>
+                <a class="carousel-control-next" href="#demo9" data-bs-slide="next" style="margin-right:-30px; width:35px; color:#000">
+                    <span class="carousel-control-next-icon">
+                        <i class="fa fa-arrow-circle-right" style="font-size:24px; color:#704A66"></i>
+                    </span>
+                </a>
+            </div>
+        </section>
+    </div>
+</section>
+<!-- Suggested Solution END-->
+
+<section class="index-banner shadow-sm position-relative mt40" style="border-top:4px solid #37bbf9; border-radius: 10px; margin-top: 15px;">
+    <img class="w-100 h-100 position-absolute img-fluid mb16" src="images/etc/2-background.jpg" style="border-radius: 10px;" />
+    <div class="container p-md-3 p-4 position-relative">
+        <div class="row">
+            <div class="col-sm-6 col-md-6 mt-3 px-2 text-center">
+                <div style="border-radius:10px; border-left:4px solid #5A63A6; box-shadow: 0px 2px 9px 4px #d0cecb;">
+                    <h5 class="font-weight-bold">FREE SUPPORT</h5>
+                    <p class="m-auto w-75" style="line-height: 1.5;font-weight: 100;">We will provide free support for any issues, queries, and bug fixing upto 90 days from the date of purchase of this application. 
+                    <a href="mailto:support@setuconsulting.com?subject=Cash & Budget Forecasting Version 19.0 - Support Request" target="_blank" class="btn btn-info mx-2 pr-sm-4 mb-2 mb-lg-0" style="text-transform: uppercase; font-size: 14px;"><i class="fa fa-envelope-square mr-sm-2" style="font-size: 20px;vertical-align: middle;"></i> <span class="d-none d-sm-inline">Request free support</span></a>
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6 mt-3 px-2 text-center">
+                <div style="border-radius:10px; border-left:4px solid #5A63A6; height: 150px; box-shadow: 0px 2px 9px 4px #d0cecb;">
+                    <h3 class="font-weight-bold">NOTE</h3>
+                    <p class="m-auto w-75" style="line-height: 1.5;font-weight: 100;">
+                        Get notified about latest update. Please drop an email when you make purchase at
+                        <a href="mailto:info@setuconsulting.com?subject=Cash & Budget Forecasting Version 19.0 - New Purchase" class="btn btn-info mx-2 pr-sm-4 mb-2 mb-lg-0" style="text-transform: uppercase; font-size: 14px;"><i class="fa fa-envelope-square mr-sm-2" style="font-size: 20px;vertical-align: middle;"></i> <span class="d-none d-sm-inline">Setu Consulting</span></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="sec-visual-customization" class="row mb-5 mt-6 p-3 py-5 bg-light shadow justify-content-center" style="border-radius:20px">
+    <img src="images/odoo_images/odoo-services.png" class="responsive" style="margin:2px 2px 2px 2px; border-radius: 10px;  box-shadow: -1px 0px 10px 2px #888;" alt="Setu Consulting Services Private Limited | Odoo Certified Consultant | Offical Odoo Partner" title="Setu Consulting Services Private Limited | Odoo Certified Consultant | Offical Odoo Partner">
+</section>
+</body>
+</html>
