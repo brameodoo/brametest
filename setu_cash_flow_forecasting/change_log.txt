@@ -1,0 +1,15 @@
+Date         :  24th November 2025
+Version      : '1.0' (in __manifest__.py)
+Odoo Version : 19
+Done by : Aastha Vora
+Tested by : Payal Kheradiya
+Module : setu_cash_flow_forecasting
+- Migrate module 18 to 19
+
+Date         :  11th June 2025
+Version      : '1.0' (in __manifest__.py)
+Odoo Version : 19
+Done by : Aastha Vora
+Tested by : Aastha Vora,Payal Kheradiya
+Module : setu_cash_flow_forecasting
+- Migrate module 18 to 19
